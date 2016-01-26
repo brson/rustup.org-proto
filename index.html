@@ -2,25 +2,47 @@
 
 <head>
   <meta charset="utf-8">
-  <title>rustup.org - Update your Rust</title>
-  <meta name="keywords" content="Rust, Rust programming language, rustlang, rust-lang, Mozilla Rust">
-  <meta name="description" content="A new era in rustup">
+  <title>rustup.rs - Update your Rust</title>
+  <meta name="keywords" content="Rust, Rust programming language, rustlang, rust-lang, Mozilla Rust, rustup">
+  <meta name="description" content="This is how you Rust">
+
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/rustup.css">
+
 </head>
 
-<h1>rustup.org (prototype)</h1>
+<h1>rustup.rs</h1>
 
 <p id="pitch">
-  You've come for <a href="https://www.rust-lang.org">Rust</a>.
-  We've got the best Rust.
+  This is the best way to install <a href="https://www.rust-lang.org">Rust</a>.
 </p>
 
-<p id="platform-instructions-unix">
-  Run this in your terminal to install Rust:
+<div id="platform-instructions-unix" style="display: none;">
+  <p>Run the following in your terminal:</p>
   <pre>
-    curl -sSf https://sh.rustup.org | sh
+    curl -sSf https://sh.rustup.rs | sh
   </pre>
-</p>
+  <p>Then follow the on-screen instructions.</p>
+</div>
+
+<div id="platform-instructions-win" style="display: none;">
+  Run <a href="https://win.rustup.rs">this program</a> and follow the
+  instructions.
+</div>
+
+<div id="platform-instructions-unknown">
+  <p>I don't recognize your platform.</p>
+  <p>
+    rustup.rs presently supports Windows, Linux, and Mac OS X. If
+    you <em>are</em> on one of these platforms and are seeing this then
+    either JavaScript is disabled or this website is drunk and
+    <a href="#">should be reported.</a>
+  </p>
+</div>
 
 <p id="help">
   Need help? <a href="http://example.com">Ask on #rust-beginners</a>.
 </p>
+
+<script type="text/javascript" src="/rustup.js"></script>
+
